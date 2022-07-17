@@ -20,7 +20,7 @@ func _ready():
 	pass 
 
 func set_die(die_type):
-	print("Setting Die")
+	print("Setting die type: " + var2str(die_type))
 	die_construct = DiceTypes.GetDieType(die_type)
 	if die_construct != null:
 		faces.set_faces(die_construct)
