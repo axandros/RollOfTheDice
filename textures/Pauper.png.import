@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Cut.png-75a3e77d691eb6ab643e254ad0df7853.stex"
+path="res://.import/Pauper.png-30766864aad56a7b5d36a8a5d72315ed.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Cut.png"
-dest_files=[ "res://.import/Cut.png-75a3e77d691eb6ab643e254ad0df7853.stex" ]
+source_file="res://textures/Pauper.png"
+dest_files=[ "res://.import/Pauper.png-30766864aad56a7b5d36a8a5d72315ed.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false

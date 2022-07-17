@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Reroll.png-0f2a89fa938c32def31a2ca85dcf3db8.stex"
+path="res://.import/3.png-c72ec12480ab835dbb7258ff91a7f930.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Reroll.png"
-dest_files=[ "res://.import/Reroll.png-0f2a89fa938c32def31a2ca85dcf3db8.stex" ]
+source_file="res://textures/old/3.png"
+dest_files=[ "res://.import/3.png-c72ec12480ab835dbb7258ff91a7f930.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false

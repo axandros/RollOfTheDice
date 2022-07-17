@@ -83,9 +83,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Control"]
 
@@ -98,3 +95,22 @@ text = "Roll"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/CanvasLayer"]
+margin_left = 20.2043
+margin_top = 15.7145
+margin_right = 262.204
+margin_bottom = 143.714
+
+[node name="roll_sum_label" type="Label" parent="Control/CanvasLayer/HBoxContainer"]
+margin_top = 57.0
+margin_right = 32.0
+margin_bottom = 71.0
+text = "Sum:"
+
+[node name="roll_sum" type="Label" parent="Control/CanvasLayer/HBoxContainer"]
+margin_left = 36.0
+margin_top = 57.0
+margin_right = 52.0
+margin_bottom = 71.0
+text = "00"
