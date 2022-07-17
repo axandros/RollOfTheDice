@@ -1,0 +1,100 @@
+[gd_resource type="ShaderMaterial" load_steps=25 format=2]
+
+[ext_resource path="res://textures/Cut.png" type="Texture" id=1]
+[ext_resource path="res://textures/1.png" type="Texture" id=2]
+[ext_resource path="res://textures/2.png" type="Texture" id=3]
+[ext_resource path="res://textures/5.png" type="Texture" id=4]
+[ext_resource path="res://textures/6.png" type="Texture" id=5]
+[ext_resource path="res://textures/4.png" type="Texture" id=6]
+[ext_resource path="res://textures/9.png" type="Texture" id=7]
+[ext_resource path="res://textures/8.png" type="Texture" id=8]
+[ext_resource path="res://textures/Reroll.png" type="Texture" id=9]
+[ext_resource path="res://textures/7.png" type="Texture" id=10]
+[ext_resource path="res://textures/3.png" type="Texture" id=11]
+
+[sub_resource type="VisualShaderNodeTexture" id=1]
+texture = ExtResource( 7 )
+
+[sub_resource type="VisualShaderNodeTexture" id=2]
+texture = ExtResource( 1 )
+
+[sub_resource type="VisualShaderNodeTexture" id=3]
+texture = ExtResource( 9 )
+
+[sub_resource type="VisualShaderNodeUniformRef" id=4]
+
+[sub_resource type="VisualShaderNodeTexture" id=5]
+texture = ExtResource( 2 )
+
+[sub_resource type="VisualShaderNodeTexture" id=6]
+texture = ExtResource( 3 )
+
+[sub_resource type="VisualShaderNodeTexture" id=7]
+texture = ExtResource( 11 )
+
+[sub_resource type="VisualShaderNodeTexture" id=8]
+texture = ExtResource( 6 )
+
+[sub_resource type="VisualShaderNodeTexture" id=9]
+texture = ExtResource( 4 )
+
+[sub_resource type="VisualShaderNodeTexture" id=10]
+texture = ExtResource( 5 )
+
+[sub_resource type="VisualShaderNodeTexture" id=11]
+texture = ExtResource( 10 )
+
+[sub_resource type="VisualShaderNodeTexture" id=12]
+texture = ExtResource( 8 )
+
+[sub_resource type="VisualShader" id=13]
+code = "shader_type spatial;
+render_mode specular_schlick_ggx;
+
+
+
+
+void vertex() {
+// Output:0
+
+}
+
+void fragment() {
+// Output:0
+
+}
+
+void light() {
+// Output:0
+
+}
+"
+graph_offset = Vector2( -346, -12.5 )
+nodes/fragment/0/position = Vector2( 400, 140 )
+nodes/fragment/2/node = SubResource( 5 )
+nodes/fragment/2/position = Vector2( -160, 340 )
+nodes/fragment/3/node = SubResource( 6 )
+nodes/fragment/3/position = Vector2( -151, 576 )
+nodes/fragment/4/node = SubResource( 7 )
+nodes/fragment/4/position = Vector2( -151, 786 )
+nodes/fragment/5/node = SubResource( 8 )
+nodes/fragment/5/position = Vector2( -151, 996 )
+nodes/fragment/6/node = SubResource( 9 )
+nodes/fragment/6/position = Vector2( -151, 1206 )
+nodes/fragment/7/node = SubResource( 10 )
+nodes/fragment/7/position = Vector2( -151, 1416 )
+nodes/fragment/8/node = SubResource( 11 )
+nodes/fragment/8/position = Vector2( -151, 1626 )
+nodes/fragment/9/node = SubResource( 12 )
+nodes/fragment/9/position = Vector2( -151, 1836 )
+nodes/fragment/10/node = SubResource( 1 )
+nodes/fragment/10/position = Vector2( -151, 2046 )
+nodes/fragment/11/node = SubResource( 2 )
+nodes/fragment/11/position = Vector2( -151, 2256 )
+nodes/fragment/12/node = SubResource( 3 )
+nodes/fragment/12/position = Vector2( -151, 2466 )
+nodes/fragment/13/node = SubResource( 4 )
+nodes/fragment/13/position = Vector2( -80, 120 )
+
+[resource]
+shader = SubResource( 13 )
