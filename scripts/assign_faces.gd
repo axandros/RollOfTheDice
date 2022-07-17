@@ -1,13 +1,13 @@
 extends MeshInstance
-
+# materials to apply
 export (Array, Material) var material_list
-
+# order to apply numbers coming in for the math to match
 var face_order = [2,1, 5, 3, 4, 0]
 
+# die construct is an array of strings showing the symbol that the corresponding face should display.
 func set_faces(die_construct):
 	for i in 6:
 		var face = face_order[i]
-		mesh.surface_set_material(face, null)
 		var value = die_construct[i+1]
 		var mat = material_list[0]
 		if value == "0":
